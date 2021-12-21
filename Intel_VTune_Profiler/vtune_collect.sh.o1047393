@@ -1,0 +1,113 @@
+
+########################################################################
+#      Date:           Sat 18 Dec 2021 05:22:09 AM PST
+#    Job ID:           1047393.v-qsvr-1.aidevcloud
+#      User:           u122810
+# Resources:           neednodes=1:gpu:ppn=2,nodes=1:gpu:ppn=2,walltime=06:00:00
+########################################################################
+
+ 
+:: WARNING: setvars.sh has already been run. Skipping re-execution.
+   To force a re-execution of setvars.sh, use the '--force' option.
+   Using '--force' can result in excessive use of your environment variables.
+  
+usage: source setvars.sh [--force] [--config=file] [--help] [...]
+  --force        Force setvars.sh to re-run, doing so may overload environment.
+  --config=file  Customize env vars using a setvars.sh configuration file.
+  --help         Display this help message and exit.
+  ...            Additional args are passed to individual env/vars.sh scripts
+                 and should follow this script's arguments.
+  
+  Some POSIX shells do not accept command-line options. In that case, you can pass
+  command-line options via the SETVARS_ARGS environment variable. For example:
+  
+  $ SETVARS_ARGS="ia32 --config=config.txt" ; export SETVARS_ARGS
+  $ . path/to/setvars.sh
+  
+  The SETVARS_ARGS environment variable is cleared on exiting setvars.sh.
+  
+## u122810 is compiling DPCPP_Essentials Module6 -- Intel Vtune profiler - 1 of 1 Vtune_Profiler
+Vtune Collect gpu-hotspots
+Grid Sizes: 256 256 256
+Memory Usage: 230 MB
+ ***** Running SYCL variant *****
+Initializing ... 
+ Running on Intel(R) UHD Graphics P630 [0x3e96]
+ The Device Max Work Group Size is : 256
+ The Device Max EUCount is : 24
+ The blockSize x is : 8
+ The blockSize y is : 8
+ Using Global Memory Kernel : 
+SYCL time: 803 ms
+--------------------------------------
+time         : 0.803 secs
+throughput   : 417.863 Mpts/s
+flops        : 25.4897 GFlops
+bytes        : 5.01436 GBytes/s
+
+--------------------------------------
+
+--------------------------------------
+Elapsed Time: 7.066s
+    GPU Time: 0.564s
+EU Array Stalled/Idle: 33.3% of Elapsed time with GPU busy
+ | The percentage of time when the EUs were stalled or idle is high, which has a
+ | negative impact on compute-bound applications.
+ |
+    GPU L3 Bandwidth Bound: 86.6% of peak value
+     | L3 bandwidth was high when EUs were stalled or idle. Consider improving
+     | cache reuse.
+     |
+
+        Hottest GPU Computing Tasks Bound by GPU L3 Bandwidth
+        Computing Task                                                                                                                                                                                                                                                                     Total Time
+        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ----------
+        iso_3dfd_device(cl::sycl::queue&, float*, float*, float*, float*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned int)::{lambda(cl::sycl::handler&)#1}::operator()(cl::sycl::handler&) const::iso_3dfd_kernel        0.293s
+        iso_3dfd_device(cl::sycl::queue&, float*, float*, float*, float*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned int)::{lambda(cl::sycl::handler&)#1}::operator()(cl::sycl::handler&) const::iso_3dfd_kernel_2      0.247s
+    Sampler Busy: 0.0% of peak value
+
+        Hottest GPU Computing Tasks with High Sampler Usage
+        Computing Task  Total Time
+        --------------  ----------
+FPU Utilization: 7.9% of Elapsed time with GPU busy
+
+    Hottest GPU Computing Tasks with High FPU Utilization
+    Computing Task  Total Time
+    --------------  ----------
+Collection and Platform Info
+    Application Command Line: /home/u122810/oneAPI_Essentials/06_Intel_VTune_Profiler/iso3dfd "256" "256" "256" "8" "8" "8" "20" "sycl" "gpu" 
+    User Name: u122810
+    Operating System: 5.4.0-80-generic DISTRIB_ID=Ubuntu DISTRIB_RELEASE=20.04 DISTRIB_CODENAME=focal DISTRIB_DESCRIPTION="Ubuntu 20.04.3 LTS"
+    Computer Name: s001-n140
+    Result Size: 127.5 MB 
+    Collection start time: 13:22:30 18/12/2021 UTC
+    Collection stop time: 13:22:37 18/12/2021 UTC
+    Collector Type: Event-based sampling driver,User-mode sampling and tracing
+    CPU
+        Name: Intel(R) microarchitecture code named Coffeelake
+        Frequency: 3.696 GHz
+        Logical CPU Count: 12
+    GPU
+        Name: HD Graphics P630
+        Vendor: Intel Corporation
+        EU Count: 24
+        Max EU Thread Count: 7
+        Max Core Frequency: 1.200 GHz
+        GPU OpenCL Info
+            Version
+            Max Compute Units: 24
+            Max Work Group Size: 256
+            Local Memory: 65.5 KB 
+            SVM Capabilities
+
+If you want to skip descriptions of detected performance issues in the report,
+enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
+Alternatively, you may view the report in the csv format: vtune -report
+<report_name> -format=csv.
+Vtune Summary Report
+
+########################################################################
+# End of output for job 1047393.v-qsvr-1.aidevcloud
+# Date: Sat 18 Dec 2021 05:24:56 AM PST
+########################################################################
+
