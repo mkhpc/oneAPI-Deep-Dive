@@ -26,4 +26,8 @@ The Intel oneAPI Toolkits based on Data Parallel C++ (DPC++) - modern C++ and SY
 
 [Launch Jupyterlab and select Terminal](https://jupyter.oneapi.devcloud.intel.com)
 
+# Clone this Repo for Hands-on Lab
+
+| git clone https://github.com/mkhpc/oneAPI-Deep-Dive.git
+
 
