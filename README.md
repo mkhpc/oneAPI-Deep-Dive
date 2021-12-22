@@ -20,5 +20,5 @@ The Intel oneAPI Toolkits based on Data Parallel C++ (DPC++) - modern C++ and SY
 
 ## Get 120 days of Free access (extensions available) of Intel DevCloud - a free development sandbox with access to the latest hardware from Intel and Intel oneAPI software.
 
-Create an Intel DevCloud Account![image](https://user-images.githubusercontent.com/48019179/147032083-b9ccbcc1-80d0-4caa-bb19-9537ec90fa22.png)
+Create an Intel DevCloud Account (software.intel.com/devcloud/oneapi)
 
