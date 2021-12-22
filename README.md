@@ -4,7 +4,7 @@ The Intel oneAPI Toolkits based on Data Parallel C++ (DPC++) - modern C++ and SY
 
 # What will you learn:
 
-Articulate how oneAPI can help to solve the challenges of programming in a heterogeneous world.
-Understand the DPC++ language and programming model.
-Profile a DPC++ application using Intel VTune Profiler on Intel DevCloud.
-Learn how to migrate CUDA code to Data Parallel C++ using the Intel DPC++ Compatibility tool.
+* Articulate how oneAPI can help to solve the challenges of programming in a heterogeneous world.
+* Understand the DPC++ language and programming model.
+* Profile a DPC++ application using Intel VTune Profiler on Intel DevCloud.
+* Learn how to migrate CUDA code to Data Parallel C++ using the Intel DPC++ Compatibility tool.
