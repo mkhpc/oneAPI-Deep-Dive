@@ -33,4 +33,4 @@ git clone https://github.com/mkhpc/oneAPI-Deep-Dive.git
 ```
 | Notebook Name | Description |
 |---|---|
-|[oneAPI_and_DPCPP_Intro](oneAPI_and_DPCPP_Intro)| + Introduction and Motivation for oneAPI and DPC++.<br>+ DPC++ __Hello World__<br>+ Compiling DPC++ and __DevCloud__ Usage<br>+ ___Lab Excercise___: Vector Increment to Vector Add |
+|[oneAPI_and_DPCPP_Intro](oneAPI_and_DPCPP_Intro)| * Introduction and Motivation for oneAPI and DPC++ <br>* DPC++ __Hello World__<br>* Compiling DPC++ and __DevCloud__ Usage<br>* ___Lab Excercise___: Vector Increment to Vector Add |
