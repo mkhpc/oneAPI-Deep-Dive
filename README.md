@@ -18,7 +18,7 @@ The Intel oneAPI Toolkits based on Data Parallel C++ (DPC++) - modern C++ and SY
 * Demonstration of Intel VTune Profiler on Intel DevCloud 
 * Demonstration of Intel DPC++ Compatibility Tool on Intel DevCloud 
 
-"__Get 120 days of Free access (extensions available) of Intel DevCloud - a free development sandbox with access to the latest hardware from Intel and Intel oneAPI software.__"
+"_Get 120 days of Free access (extensions available) of Intel DevCloud - a free development sandbox with access to the latest hardware from Intel and Intel oneAPI software._"
 
 [Create an Intel DevCloud Account](https://software.intel.com/devcloud/oneapi)
 
