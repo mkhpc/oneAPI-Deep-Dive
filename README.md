@@ -22,7 +22,7 @@ The Intel oneAPI Toolkits based on Data Parallel C++ (DPC++) - modern C++ and SY
 
 [Create an Intel DevCloud Account](https://software.intel.com/devcloud/oneapi)
 
-[Launch Jupyterlab on your Intel DevCloud account](https://jupyter.oneapi.devcloud.intel.com)
+[Launch Jupyterlab on your Intel DevCloud account](https://jupyter.oneapi.devcloud.intel.com/hub/login)
 
 [Connect with Linux/macOS SSH Client](https://devcloud.intel.com/oneapi/documentation/connect-with-ssh-linux-macos)
 
